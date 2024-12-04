@@ -1,0 +1,15 @@
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/bin/Debug/net8.0/aoc04
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/bin/Debug/net8.0/aoc04.deps.json
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/bin/Debug/net8.0/aoc04.runtimeconfig.json
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/bin/Debug/net8.0/aoc04.dll
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/bin/Debug/net8.0/aoc04.pdb
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/obj/Debug/net8.0/aoc04.GeneratedMSBuildEditorConfig.editorconfig
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/obj/Debug/net8.0/aoc04.AssemblyInfoInputs.cache
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/obj/Debug/net8.0/aoc04.AssemblyInfo.cs
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/obj/Debug/net8.0/aoc04.csproj.CoreCompileInputs.cache
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/obj/Debug/net8.0/aoc04.sourcelink.json
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/obj/Debug/net8.0/aoc04.dll
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/obj/Debug/net8.0/refint/aoc04.dll
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/obj/Debug/net8.0/aoc04.pdb
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/obj/Debug/net8.0/aoc04.genruntimeconfig.cache
+/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/obj/Debug/net8.0/ref/aoc04.dll
