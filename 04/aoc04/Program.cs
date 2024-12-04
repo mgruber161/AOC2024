@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-var lines = File.ReadAllLines("/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/input.txt");
+﻿var lines = File.ReadAllLines("/home/mgcandy/DEV/aoc/AOC2024/04/aoc04/input.txt");
 
 var sum = lines.Select(l => ((l.Length - l.Replace("XMAS", string.Empty).Length) / 4) + (l.Length - l.Replace("SAMX", string.Empty).Length) / 4).Sum()
     + Enumerable.Range(0, lines[0].Length).Select(i => new string(lines.Select(s => s[i]).ToArray()))
