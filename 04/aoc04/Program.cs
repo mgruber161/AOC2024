@@ -6,15 +6,15 @@ var sum = lines.Concat(
         .GroupBy(x => x.Key, (key, values) => new string(values.Select(i => i.Value).ToArray())).ToArray()).Concat(
     lines.SelectMany((row, rowIdx) => row.Select((x, colIdx) => new { Key = rowIdx + colIdx, Value = x }))
         .GroupBy(x => x.Key, (key, values) => new string(values.Select(i => i.Value).ToArray())).ToArray())
-    .Select(l => ((l.Length - l.Replace("XMAS", string.Empty).Length) / 4) + (l.Length - l.Replace("SAMX", string.Empty).Length) / 4).Sum();
+    .Sum(l => ((l.Length - l.Replace("XMAS", string.Empty).Length) / 4) + (l.Length - l.Replace("SAMX", string.Empty).Length) / 4);
 
 Console.WriteLine($"sum p1: {sum}");
 
-var sum_p2 = Enumerable.Range(1, lines[0].Length - 2).Select(i => 
-    Enumerable.Range(1, lines.Count() - 2).Select(j => 
+var sum_p2 = Enumerable.Range(1, lines[0].Length - 2).Sum(i => 
+    Enumerable.Range(1, lines.Count() - 2).Sum(j => 
         lines[j][i] == 'A' && 
-        (((lines[j+1][i-1] == 'S' && lines[j-1][i+1] == 'M' ) || (lines[j+1][i-1] == 'M' && lines[j-1][i+1] == 'S' ))
-        && ((lines[j-1][i-1] == 'S' && lines[j+1][i+1] == 'M' ) || (lines[j-1][i-1] == 'M' && lines[j+1][i+1] == 'S' )))
-        ? 1 : 0).Sum()).Sum();
+        ((lines[j+1][i-1] == 'S' && lines[j-1][i+1] == 'M' ) || (lines[j+1][i-1] == 'M' && lines[j-1][i+1] == 'S' ))
+        && ((lines[j-1][i-1] == 'S' && lines[j+1][i+1] == 'M' ) || (lines[j-1][i-1] == 'M' && lines[j+1][i+1] == 'S' ))
+        ? 1 : 0));
 
 Console.WriteLine($"sum p2: {sum_p2}");
